@@ -12,9 +12,18 @@ def get_user_input():
 
 tx_amount = get_user_input() 
 add_value(tx_amount)
+
 tx_amount = get_user_input()
 add_value(transaction_amount=tx_amount, last_transaction= get_last_blockchain_value())
+
+# Get the thrid transaction input and add the value to the blockchain
 tx_amount = get_user_input()
 add_value(tx_amount, get_last_blockchain_value())
 
-print(blockchain)
+
+# Output the blockchain list to the console
+for block in blockchain:
+    print('Outputtin Block')
+    print(block)
+
+print('Done!')
